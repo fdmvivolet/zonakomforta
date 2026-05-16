@@ -1,0 +1,8 @@
+{
+  "name": "Zona Komforta",
+  "description": "A premium specialty coffee experience focusing on artisanal comfort and modern tactile design.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

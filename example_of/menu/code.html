@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+
+<html lang="ru"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Zona Komforta - Меню</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;family=Open+Sans:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container": "#f3ecea",
+                        "surface-container-low": "#f9f2f0",
+                        "tertiary-fixed-dim": "#c8c8b0",
+                        "on-error-container": "#93000a",
+                        "on-secondary": "#ffffff",
+                        "secondary-fixed": "#ffdcc6",
+                        "outline": "#81756e",
+                        "secondary-fixed-dim": "#eabda0",
+                        "on-secondary-container": "#7a5840",
+                        "primary": "#26170c",
+                        "on-tertiary-fixed-variant": "#474836",
+                        "primary-fixed": "#fbddca",
+                        "surface-dim": "#dfd9d6",
+                        "tertiary-fixed": "#e4e4cc",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary": "#191b0c",
+                        "on-surface": "#1d1b1a",
+                        "on-surface-variant": "#4f453f",
+                        "surface-tint": "#705a4c",
+                        "primary-fixed-dim": "#dec1af",
+                        "on-tertiary-fixed": "#1b1d0e",
+                        "error": "#ba1a1a",
+                        "inverse-surface": "#33302e",
+                        "inverse-on-surface": "#f6efed",
+                        "surface-container-high": "#eee7e4",
+                        "on-secondary-fixed-variant": "#5f402a",
+                        "inverse-primary": "#dec1af",
+                        "on-background": "#1d1b1a",
+                        "surface": "#fff8f5",
+                        "outline-variant": "#d2c4bc",
+                        "on-error": "#ffffff",
+                        "on-primary-fixed": "#28180d",
+                        "secondary-container": "#ffd1b3",
+                        "primary-container": "#3d2b1f",
+                        "error-container": "#ffdad6",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-container": "#ac9181",
+                        "surface-container-highest": "#e8e1df",
+                        "on-primary": "#ffffff",
+                        "surface-bright": "#fff8f5",
+                        "on-secondary-fixed": "#2d1604",
+                        "on-primary-fixed-variant": "#574335",
+                        "tertiary-container": "#2e3020",
+                        "surface-variant": "#e8e1df",
+                        "background": "#fff8f5",
+                        "on-tertiary-container": "#979882",
+                        "secondary": "#79573f"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-desktop": "64px",
+                        "base": "8px",
+                        "sm": "12px",
+                        "xs": "4px",
+                        "xl": "80px",
+                        "md": "24px",
+                        "gutter": "24px",
+                        "margin-mobile": "16px",
+                        "lg": "48px"
+                    },
+                    "fontFamily": {
+                        "headline-sm": ["Montserrat"],
+                        "body-md": ["Open Sans"],
+                        "body-lg": ["Open Sans"],
+                        "label-md": ["Montserrat"],
+                        "display-lg-mobile": ["Montserrat"],
+                        "label-sm": ["Montserrat"],
+                        "headline-md": ["Montserrat"],
+                        "display-lg": ["Montserrat"]
+                    },
+                    "fontSize": {
+                        "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "display-lg-mobile": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                        "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                        "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #fff8f5;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-body-md text-on-surface">
+<!-- TopAppBar -->
+<header class="bg-surface dark:bg-surface-container-low w-full top-0 sticky shadow-sm z-40">
+<div class="flex items-center justify-between px-margin-mobile h-16 w-full">
+<div class="active:scale-95 duration-200 cursor-pointer">
+<span class="material-symbols-outlined text-primary dark:text-primary-fixed">menu</span>
+</div>
+<h1 class="font-headline-md text-headline-md-mobile font-bold text-primary dark:text-primary-fixed">Zona Komforta</h1>
+<div class="active:scale-95 duration-200 cursor-pointer overflow-hidden rounded-full h-8 w-8 bg-surface-container-high">
+<img alt="Профиль" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDM0DyZ4WhTwNi10rG5-f2MQNs3yVlWzrtb41GRDRlGA1dGnkoa6mogXNgvv_wSyFKo9qMf7wWVfSwwTBa1SD8BsbBq7R_73sHPqL0lEMChxhpCqUZFpJjFqNICZaF_EZcG1bsQx8MW-OkC7CPedpkmNgPRy9UgZKQWG1nTVWRLRcSHnS0b4yOeSqCRY8sH3fwp_3qSFgfmstOLCVzR7bi6WD7EnJzH5jomCqzcdupmhV5C1svA4sF57j0REMOsvSD2HRw1oUWgjw"/>
+</div>
+</div>
+</header>
+<main class="pb-32 px-margin-mobile md:px-margin-desktop max-w-screen-xl mx-auto">
+<!-- Hero Search / Filter (Conceptual) -->
+<section class="py-sm">
+<div class="relative mt-4">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline">search</span>
+<input class="w-full pl-12 pr-4 py-3 bg-surface-container-low border-none rounded-xl text-body-md focus:ring-2 focus:ring-secondary transition-all placeholder:text-outline" placeholder="Найти любимый напиток..." type="text"/>
+</div>
+</section>
+<!-- Signature Drinks Section -->
+<section class="mt-8">
+<div class="flex items-center gap-3 mb-6">
+<div class="h-8 w-1 bg-secondary rounded-full"></div>
+<h2 class="font-headline-sm text-headline-sm-mobile text-primary">Авторские напитки</h2>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+<!-- Product Card 1 -->
+<div class="bg-surface rounded-xl overflow-hidden shadow-[0_10px_20px_rgba(61,43,31,0.08)] group hover:-translate-y-1 transition-transform duration-300">
+<div class="relative h-48 w-full overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A close-up of a vibrant matcha latte in a clear glass, featuring beautiful layered textures of deep green matcha and creamy white milk froth on top. The lighting is soft and natural, emphasizing the organic texture of the foam. Set in a modern, light-filled cafe with a palette of warm beiges and espresso browns." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDB5kLT7cVpVQnRgMrIupyhMYLrtoi8dwGEitYrwRlHlO2vgv8EIOUQpyRr1VP85g5c8cHDbY-jHxgtKD5CyIP6mGWIAjclyxQ5eKTZvrL6bmb2nYHonHsRxSwpfLKOuddN-XLQzIBYQGXqcFRMG8Gxzr7_H4gf8A3xI4zK4fPSH0gws2k1RB_87AIiOoqwnKkx_KIUN82TYLRlk8BIwe674PJQGGP52xCTa8vYnsuxqetFABrg7MaIoU-kW41I56J3PqkY4UIWAg"/>
+<div class="absolute top-2 left-2 flex gap-1">
+<span class="bg-secondary-container text-on-secondary-container text-[10px] px-2 py-0.5 rounded-full font-label-sm uppercase tracking-wider">New</span>
+<span class="bg-primary-container text-on-primary-container text-[10px] px-2 py-0.5 rounded-full font-label-sm uppercase tracking-wider">Signature</span>
+</div>
+</div>
+<div class="p-4">
+<h3 class="font-label-md text-primary truncate">Matcha Mudslide</h3>
+<p class="text-label-sm text-outline-variant mt-1 leading-tight">Матча, какао, нежное молоко</p>
+<div class="mt-3 flex items-center justify-between">
+<span class="font-bold text-primary">450 ₽</span>
+<button class="bg-primary text-white p-2 rounded-lg active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-sm leading-none" style="font-variation-settings: 'FILL' 1;">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="bg-surface rounded-xl overflow-hidden shadow-[0_10px_20px_rgba(61,43,31,0.08)] group hover:-translate-y-1 transition-transform duration-300">
+<div class="relative h-48 w-full overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="An artistic top-down view of a specialty coffee drink with complex latte art, served in a ceramic cup with a tactile matte finish. The beverage has a rich amber and cream color palette, suggesting a honey or caramel infusion. The scene is warmly lit with golden hour light, reflecting the premium artisanal quality of the brand." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJqo1XowmNxu_T2yspE5Us8OVo0eeSw2cwpnwBzTc01WbAtRHc7Y4govx_HQMn7T5ZNT_O--nH0Wu3-RZ4Q049E9li454b9XT3bz6GwgrO2_Z6FJHPEkn_p7VWS7E1274PXXK5BIJllhtSIMqXjsJfrHGqI0gSvGkAf7mYo2ocZDBQNw8X7zBS2WeHZUR9ich5e0hxHgBSQ2-3yqBll45IaWGBC-DvLawU5Rz1n1vrcogXgN6RZp2A1xVU4Ht6-iT1qqJbcucWwg"/>
+<div class="absolute top-2 left-2">
+<span class="bg-primary-container text-on-primary-container text-[10px] px-2 py-0.5 rounded-full font-label-sm uppercase tracking-wider">Signature</span>
+</div>
+</div>
+<div class="p-4">
+<h3 class="font-label-md text-primary truncate">Berry Breeze</h3>
+<p class="text-label-sm text-outline-variant mt-1 leading-tight">Кофе с лесными ягодами</p>
+<div class="mt-3 flex items-center justify-between">
+<span class="font-bold text-primary">480 ₽</span>
+<button class="bg-primary text-white p-2 rounded-lg active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-sm leading-none" style="font-variation-settings: 'FILL' 1;">add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Classic Section -->
+<section class="mt-12">
+<div class="flex items-center gap-3 mb-6">
+<div class="h-8 w-1 bg-outline rounded-full"></div>
+<h2 class="font-headline-sm text-headline-sm-mobile text-primary">Классика</h2>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+<!-- Product Card 3 -->
+<div class="bg-surface rounded-xl overflow-hidden shadow-[0_10px_20px_rgba(61,43,31,0.08)] group hover:-translate-y-1 transition-transform duration-300">
+<div class="relative h-48 w-full overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A classic cappuccino with a thick, velvety layer of micro-foam and a simple heart latte art design. The coffee is rich espresso brown, contrasted against the pure white foam. The image is captured in sharp focus with a shallow depth of field, highlighting the creamy texture against a blurred cafe background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDw7_2P-js5iSdRRpUUNPWVsvw19YXGVkuywcNTvVbm9VnT9RFQ8eoXSH6pL2RAB4lUW6MLfWZ-ZOmaLKebEAw6Q7x9VmrwPMH9qT5bZXt-sYhAkHLna_1em5LnjhbJH4UrqBM0AICNRu_JQPghhSP7kHrdozfCZEJ7iy2xeDadj7Zu-HHvGBaD5U6rXNzbzWw8_aVW-kMViO94pCw_4tSR6c6TnT9gKNwr2aXjldgZ1t1yqPfGCvyX80OPjVvP4VQQ2oYjOCV9Qg"/>
+</div>
+<div class="p-4">
+<h3 class="font-label-md text-primary truncate">Капучино</h3>
+<p class="text-label-sm text-outline-variant mt-1 leading-tight">Классический баланс</p>
+<div class="mt-3 flex items-center justify-between">
+<span class="font-bold text-primary">280 ₽</span>
+<button class="bg-primary text-white p-2 rounded-lg active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-sm leading-none" style="font-variation-settings: 'FILL' 1;">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 4 -->
+<div class="bg-surface rounded-xl overflow-hidden shadow-[0_10px_20px_rgba(61,43,31,0.08)] group hover:-translate-y-1 transition-transform duration-300">
+<div class="relative h-48 w-full overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A double shot of espresso with a perfect, thick hazelnut-colored crema on top, served in a small white ceramic cup. The lighting highlights the glossy surface of the crema. The setting is minimalist and elegant, reflecting the pure craftsmanship of a professional barista in a luxury cafe environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYTIdBwp4jQ1YJ16ORcMV6LrDSKTkrvfFgz8fJnO_4pd4HaPNr-39dM_j79IkaeXcWXkUjhWwm7woPBhq556hiD2_Ngc5VjMjNtzNtgoh3un0Kf4Yl_hUqj5TVYHsbvUsGe2fPrWWd8LxAU2JwNCyk8KjjAfx8RqeO8cjVOnaUK5yjEPXK7iwXofEIqmRS8VsLnZS09q2xR25rK8F8pXWirVMmyNGXt5p40hpaVVbDqpwSgq_hRaZTS6AiwB-w1VSPctS7R15n5Q"/>
+</div>
+<div class="p-4">
+<h3 class="font-label-md text-primary truncate">Эспрессо</h3>
+<p class="text-label-sm text-outline-variant mt-1 leading-tight">Заряд бодрости</p>
+<div class="mt-3 flex items-center justify-between">
+<span class="font-bold text-primary">150 ₽</span>
+<button class="bg-primary text-white p-2 rounded-lg active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-sm leading-none" style="font-variation-settings: 'FILL' 1;">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 5 -->
+<div class="bg-surface rounded-xl overflow-hidden shadow-[0_10px_20px_rgba(61,43,31,0.08)] group hover:-translate-y-1 transition-transform duration-300">
+<div class="relative h-48 w-full overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A tall glass of flat white coffee showing the perfect integration of silky steamed milk and rich espresso. The milk is poured with precision, creating a smooth, flat surface with a tiny dot of crema in the center. The background features warm wood textures and soft, ambient indoor lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVAFP2fVRg7zSOCk4iDVICeou6c-t_q9JraH4c4ooQRtkD5TBVojfivZnzz2zFYEZ_mWkfsgqbAe2r1q7B7q9O3aSShCUmukdE5naKi2oawENOe_18aTKxBbPr4Iz-sg3FSBawz07nc2VB5nf4MwWRWC91e8XsC5-y5yQk-6dB4lhUdHcq670FFazg4byOV24MkrUa384ojFEjbKsWykiRM-0wHkLOtRYj_BKFSnKH94a4Uv2fyEvYU1jWadwdYH9hgi_Y8-dhUA"/>
+</div>
+<div class="p-4">
+<h3 class="font-label-md text-primary truncate">Флэт Уайт</h3>
+<p class="text-label-sm text-outline-variant mt-1 leading-tight">Двойной эспрессо</p>
+<div class="mt-3 flex items-center justify-between">
+<span class="font-bold text-primary">320 ₽</span>
+<button class="bg-primary text-white p-2 rounded-lg active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-sm leading-none" style="font-variation-settings: 'FILL' 1;">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 6 -->
+<div class="bg-surface rounded-xl overflow-hidden shadow-[0_10px_20px_rgba(61,43,31,0.08)] group hover:-translate-y-1 transition-transform duration-300">
+<div class="relative h-48 w-full overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A large latte in a white porcelain cup, featuring a professional rosetta latte art design. The surface is glossy and smooth, indicating perfectly steamed milk. The cup sits on a saucer with a small artisanal biscuit on the side, emphasizing a complete and luxurious cafe experience." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7FUL-VUuRmP4GuzvAMkvHYlQFpJSgpa9AsyvCfId6ks0yiqZa6lgWBCbgN1lwlbJsUObpnEa8CCGEQMcuWQg7O6iqOrUtU7Ir-Jou6-Dh8kl_PmX4C2RSGrA3eDQcKYmBAllhV27N-uWfnPPmHtAJnbHvmfjDuZ58c9U1GpOn08IByktKuXVYah-gCMnDdfEl7HmvMDsa4ryaFw7mXEtkorVyuBvjdinNc02ITZjfS7NN3PgYrZ9osZCf_B-JXuwpazACjlmx_g"/>
+</div>
+<div class="p-4">
+<h3 class="font-label-md text-primary truncate">Латте</h3>
+<p class="text-label-sm text-outline-variant mt-1 leading-tight">Много молока, мало пенки</p>
+<div class="mt-3 flex items-center justify-between">
+<span class="font-bold text-primary">350 ₽</span>
+<button class="bg-primary text-white p-2 rounded-lg active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-sm leading-none" style="font-variation-settings: 'FILL' 1;">add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Bento Grid Feature for Seasonal Promo -->
+<section class="mt-12">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="md:col-span-2 bg-primary-container rounded-3xl p-8 flex flex-col justify-between relative overflow-hidden">
+<div class="z-10">
+<span class="bg-secondary text-white text-[10px] px-3 py-1 rounded-full font-label-sm uppercase tracking-[0.1em]">Сезонное предложение</span>
+<h2 class="text-on-primary-container font-display-lg-mobile mt-4 leading-tight">Осенний пряный раф</h2>
+<p class="text-on-primary-container/80 mt-2 max-w-xs">Теплые специи, тыквенный сироп и наше фирменное молоко.</p>
+<button class="mt-6 bg-surface text-primary px-6 py-2 rounded-full font-label-md active:scale-95 transition-transform">Попробовать сейчас</button>
+</div>
+<div class="absolute right-0 bottom-0 w-1/2 h-full opacity-40">
+<img class="w-full h-full object-cover" data-alt="Close-up of a steaming mug of spiced coffee topped with cinnamon and star anise. The lighting is warm and golden, creating a cozy autumn mood. Deep shadows and rich brown tones predominate, echoing the espresso-based colors of the brand's identity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwawV0zwl9_9nWCaxrYbL0KZdM2JVQR1hjUaRxjgq5UN53K4KNesCvSP2Rl5Le7L1ezHiKnehtraQSy1rDLJ-SSfl0i2UYZwyGX9bRhGbDz-foCr_lSOQLE3BMTB_ZhQpt9IgH_p6Ykc_Gys6wYqp0Xu2o5q_i_G72cs0lVTzaIIzkcLAhylfpVXtQKFEsUrEraYBcK7fqud6qNnGQ6IeiF5sj2myPn1V6c6f7UznC5aV8W5SEyGs9BlmC-MYV1PhYGOy_8BmZCQ"/>
+</div>
+</div>
+<div class="bg-secondary-container rounded-3xl p-8 flex flex-col justify-center items-center text-center">
+<span class="material-symbols-outlined text-on-secondary-container text-4xl mb-4">coffee_maker</span>
+<h3 class="font-headline-sm text-on-secondary-container">С собой со скидкой</h3>
+<p class="text-on-secondary-container/80 mt-2">-15% в свою кружку</p>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-2 bg-surface shadow-[0_-4px_20px_0_rgba(61,43,31,0.15)] rounded-t-xl">
+<a class="flex flex-col items-center justify-center text-outline dark:text-outline-variant hover:bg-surface-container-high dark:hover:bg-surface-container-highest transition-opacity px-4 py-1 rounded-xl active:scale-90 transition-transform duration-150" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-label-sm text-label-sm mt-1">Home</span>
+</a>
+<!-- Active Tab: Menu -->
+<a class="flex flex-col items-center justify-center bg-primary-container dark:bg-secondary-container text-on-primary-container dark:text-on-secondary-container rounded-xl px-4 py-1 active:scale-90 transition-transform duration-150" href="#">
+<span class="material-symbols-outlined" data-icon="coffee_maker" style="font-variation-settings: 'FILL' 1;">coffee_maker</span>
+<span class="font-label-sm text-label-sm mt-1">Menu</span>
+</a>
+<a class="flex flex-col items-center justify-center text-outline dark:text-outline-variant hover:bg-surface-container-high dark:hover:bg-surface-container-highest transition-opacity px-4 py-1 rounded-xl active:scale-90 transition-transform duration-150" href="#">
+<span class="material-symbols-outlined" data-icon="info">info</span>
+<span class="font-label-sm text-label-sm mt-1">About Us</span>
+</a>
+</nav>
+</body></html>
