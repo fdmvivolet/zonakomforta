@@ -1,7 +1,7 @@
 import { motion, AnimatePresence, useMotionValue, useSpring, useTransform } from 'motion/react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { useState, useEffect } from 'react';
-const imagePlaceholder = '/cofe.png';
+const imagePlaceholder = `${import.meta.env.BASE_URL}cofe.png`;
 
 interface Product {
   id: string;

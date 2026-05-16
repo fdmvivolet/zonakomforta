@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import { Header, BottomNav } from './components/Navigation';
 import ProductShowcase from './components/Showcase';
 import About from './components/About';
@@ -6,7 +6,7 @@ import Menu from './components/Menu';
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="min-h-[100dvh] flex flex-col relative pb-24 md:pb-0 overflow-x-hidden bg-background">
         <Header />
         <Routes>
@@ -16,6 +16,6 @@ export default function App() {
         </Routes>
         <BottomNav />
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }

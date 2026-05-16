@@ -4,7 +4,7 @@ export function Header() {
   return (
     <header className="fixed top-0 left-0 w-full z-50 flex justify-center items-center px-margin-mobile h-16 bg-surface shadow-sm">
       <div className="flex items-center gap-2">
-        <img src="/logo.jpg" alt="Логотип" className="h-10 w-10 rounded-full object-cover" />
+        <img src={`${import.meta.env.BASE_URL}logo.jpg`} alt="Логотип" className="h-10 w-10 rounded-full object-cover" />
         <h1 className="font-headline-md text-headline-sm-mobile font-bold text-primary">
           Зона Комфорта
         </h1>
